@@ -1,0 +1,8 @@
+<ul class="ma-grid-cell-list">
+    <li ng-repeat="item in ::data | limitTo: 3">{{::'{0} ({1})' | format : item.name : item.year}}</li>
+    <li ng-if="data.length > 3">
+        <a class="grid-no-search" tabindex="0" href="" bb-tooltip="views/pages/overview/artists/albumstooltip.html" data-tooltip-placement="bottom" data-tooltip-trigger="focus">
+            {{::'And {0} more' | format : data.length - 3}}
+        </a>
+    </li>
+</ul>

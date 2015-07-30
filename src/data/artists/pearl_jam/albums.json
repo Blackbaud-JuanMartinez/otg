@@ -1,0 +1,44 @@
+{
+    "albums": [
+        {
+            "name": "Ten",
+            "year": 1991
+        },
+        {
+            "name": "Vs.",
+            "year": 1993
+        },
+        {
+            "name": "Vitalogy",
+            "year": 1994
+        },
+        {
+            "name": "No Code",
+            "year": 1996
+        },
+        {
+            "name": "Yield",
+            "year": 1998
+        },
+        {
+            "name": "Binaural",
+            "year": 2000
+        },
+        {
+            "name": "Riot Act",
+            "year": 2002
+        },
+        {
+            "name": "Pearl Jam",
+            "year": 2006
+        },
+        {
+            "name": "Backspacer",
+            "year": 2009
+        },
+        {
+            "name": "Lighnting Bolt",
+            "year": 2013
+        }
+    ]
+}

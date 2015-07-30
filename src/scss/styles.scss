@@ -1,0 +1,102 @@
+$icon-font-path: "fonts/";
+$fa-font-path: "fonts";
+$sky-icon-font-path: "fonts/";
+
+@import "../../bower_components/sky/scss/_sky.scss";
+@import "../../bower_components/sky/scss/_icons.scss";
+
+.ma-overview-artists-artist-img {
+    width: 125px;
+}
+
+.ma-overview-albums-album-img {
+    width: 100px;
+}
+
+.ma-overview-artists-artist-name {
+    font-size: $font-size-xl;
+}
+
+.ma-grid-cell-list {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+ul[rn-carousel] {
+    overflow: visible;
+}
+
+.ma-artist-carousel {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    > ul {
+        height: 430px;
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+.ma-artist-card {
+    height: 430px;
+    width: 350px;
+}
+
+.ma-artist-card-content {
+    background-color: #fff;
+    margin: 25px;
+    border: solid 1px $gray-lighter;
+    box-shadow: 0 5px 50px $gray-lighter;
+    height: 370px;
+    width: 300px;
+    @include transform(scale(0.9));
+
+    h2 {
+        height: 28px;
+        padding: 0 10px;
+        @include ellipsis;
+    }
+}
+
+.ma-artist-card-img {
+    height: 298px;
+    width: 298px;
+    background-size: cover;
+}
+
+.ma-artist-carousel-button {
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    border: none;
+    background-color: #fff;
+    opacity: 0.8;
+    z-index: 10000;
+    outline: none;
+}
+
+.ma-artist-carousel-button-back {
+    left: 10px;
+}
+
+.ma-artist-carousel-button-forward {
+    right: 10px;
+}
+
+.ma-artist-card-start-over {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.ma-artist-card-selected {
+    @include transform(scale(1));
+}

@@ -1,0 +1,6 @@
+<a ui-sref="artist.views({artistName: data.name})" class="ma-overview-artists-artist-name">{{data.name}}</a>
+<ul class="ma-grid-cell-list ma-overview-artists-artist-members">
+    <li ng-repeat="member in ::data.members">
+        {{'{0}: {1}' | format : member.name : member.instrument}}
+    </li>
+</ul>

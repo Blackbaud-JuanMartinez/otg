@@ -1,0 +1,16 @@
+{
+    "albums": [
+        {
+            "name": "Bleach",
+            "year": 1989
+        },
+        {
+            "name": "Nevermind",
+            "year": 1991
+        },
+        {
+            "name": "In Utero",
+            "year": 1993
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+<bb-tile bb-tile-header="'Members'" ng-show="membersPaged">
+    <div bb-tile-section>
+        <div bb-pagination-content="membersPaged">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Instrument</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="member in membersPaged.items">
+                        <td>{{member.name}}</td>
+                        <td>{{member.instrument}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div bb-pagination="membersPaged"></div>
+    </div>
+</bb-tile>

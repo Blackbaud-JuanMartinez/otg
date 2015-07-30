@@ -1,0 +1,21 @@
+<bb-tile bb-tile-header="'Albums'" ng-show="albumsPaged" bb-tile-settings-click="something()">
+    <div bb-tile-section>
+        <div bb-pagination-content="albumsPaged">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Year Released</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="album in albumsPaged.items">
+                        <td>{{album.name}}</td>
+                        <td>{{album.year}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div bb-pagination="albumsPaged"></div>
+    </div>
+</bb-tile>

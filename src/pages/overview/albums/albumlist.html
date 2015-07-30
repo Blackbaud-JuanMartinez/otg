@@ -1,0 +1,55 @@
+<!--
+<bb-grid bb-grid-options="gridOptions" bb-multiselect-actions="gridActions" bb-selections-updated="updateActions(selections)">
+    <bb-grid-filters-summary ng-show="appliedFilters.decades.length > 0" bb-options="filterOptions">
+        Excluding <span ng-repeat="item in appliedFilters.decades">{{item.name}}<span ng-if="!$last">, </span></span>
+    </bb-grid-filters-summary>
+    <bb-grid-filters bb-options="filterOptions">
+        <bb-grid-filters-group bb-grid-filters-group-label="'Decades'">
+            <div>
+                <label><input type="checkbox" bb-check ng-model="locals.filter1980s" /> 1980s</label>
+            </div>
+            <div>
+                <label><input type="checkbox" bb-check ng-model="locals.filter1990s" /> 1990s</label>
+            </div>
+            <div>
+                <label><input type="checkbox" bb-check ng-model="locals.filter2000s" /> 2000s</label>
+            </div>
+            <div>
+                <label><input type="checkbox" bb-check ng-model="locals.filter2010s" /> 2010s</label>
+            </div>
+        </bb-grid-filters-group>
+    </bb-grid-filters>
+</bb-grid>
+-->
+<div class="ma-artist-carousel">
+    <button type="button" class="ma-artist-carousel-button ma-artist-carousel-button-back" ng-click="goBack()" ng-show="carouselIndex > 0">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+    </button>
+    <ul rn-carousel rn-carousel-index="carouselIndex">
+        <li ng-repeat="album in gridOptions.data track by album.summary.name">
+            <div class="ma-artist-card">
+                <div class="ma-artist-card-content" ng-class="{'ma-artist-card-selected': $index === carouselIndex}">
+                    <div class="ma-artist-card-img" style="background-image: url('data/artists/{{album.summary.artist | spaceToUnderscore}}/albums/{{album.summary.name | spaceToUnderscore}}/photo.jpg')">
+                    </div>
+                    <p></p>
+                    <div>
+                        <h2>{{album.summary.name}}</h2>
+                        <p>
+                            <h5>{{album.year}}</h5>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="ma-artist-card">
+                <div class="ma-artist-card-content">
+                    <button type="button" ng-click="goToCard(0)" class="ma-artist-card-start-over">Start over</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <button type="button" class="ma-artist-carousel-button ma-artist-carousel-button-forward" ng-click="goFoward()" ng-show="carouselIndex < gridOptions.data.length - 1">
+        <i class="glyphicon glyphicon-chevron-right"></i>
+    </button>
+</div>

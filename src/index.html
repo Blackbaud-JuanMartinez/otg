@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="musicapp">
+
+<head>
+    <title>Sky Sample Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../bower_components/angular-carousel/dist/angular-carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/easyXDM/2.4.17.1/easyXDM.js"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/sky.js"></script>
+    <script src="js/app.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-carousel/dist/angular-carousel.js"></script>
+</head>
+
+<body ng-controller="MainController">
+    <div bb-omnibar></div>
+    <div class="bb-omnibar-height-margin"></div>
+    <bb-navbar>
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-left">
+                <li ui-sref-active="bb-navbar-active">
+                    <a ui-sref="home.artists">Overview</a>
+                </li>
+            </ul>
+        </div>
+    </bb-navbar>
+    <div ui-view></div>
+</body>
+
+</html>

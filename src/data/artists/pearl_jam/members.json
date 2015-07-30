@@ -1,0 +1,24 @@
+{
+    "members": [
+        {
+            "name": "Eddie Vedder",
+            "instrument": "Vocals"
+        },
+        {
+            "name": "Mike McCready",
+            "instrument": "Lead Guitar"
+        },
+        {
+            "name": "Stone Gossard",
+            "instrument": "Rhythm Guitar"
+        },
+        {
+            "name": "Jeff Ament",
+            "instrument": "Bass"
+        },
+        {
+            "name": "Matt Cameron",
+            "instrument": "Drums"
+        }
+    ]
+}

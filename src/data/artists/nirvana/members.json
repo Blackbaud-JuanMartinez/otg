@@ -1,0 +1,16 @@
+{
+    "members": [
+        {
+            "name": "Kurt Cobain",
+            "instrument": "Lead Guitar/Vocals"
+        },
+        {
+            "name": "Krist Novoselic",
+            "instrument": "Bass"
+        },
+        {
+            "name": "Dave Grohl",
+            "instrument": "Drums"
+        }
+    ]
+}
